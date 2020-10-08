@@ -1,0 +1,163 @@
+body {
+	margin: 0px;
+	position: relative;
+}
+.ol-popup {
+	position: absolute;
+	background-color: white;
+	-webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+	filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+	padding: 5px;
+	border-radius: 0px;
+	border: 1px solid #cccccc;
+	bottom: 12px;
+	left: -50px;
+}
+.ol-popup:after, .ol-popup:before {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.ol-popup:after {
+	border-top-color: white;
+	border-width: 10px;
+	left: 48px;
+	margin-left: -10px;
+}
+.ol-popup:before {
+	border-top-color: #cccccc;
+	border-width: 11px;
+	left: 48px;
+	margin-left: -11px;
+}
+.ol-popup-closer {
+	text-decoration: none;
+	position: absolute;
+	top: 2px;
+	right: 8px;
+}
+.ol-popup-closer:after {
+	content: "✖";
+	background-color: white;
+	color: gray;
+	padding: 6px;
+	padding-bottom: 3px;
+	padding-top: 0px;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+}
+.post-img {
+	max-height: 100px;
+	max-width: 100px;
+}
+.map {
+	width: 100% !important;
+	position: absolute;
+}
+.user-post {
+	background-color: rgb(255,255,255);
+	position: absolute;
+}
+.buttons-right-post {
+	position: absolute;
+	bottom: 15;
+	right: 15;
+}
+.buttons-left-post {
+	margin: 10px;
+	bottom: 15;
+	position: absolute;
+	left: 15;
+}
+.imgName {
+	margin: 10px;
+	bottom: 15;
+	position: absolute;
+	left: 120;
+	font-size: 1.5em;
+	width: 190px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.text-post {
+	margin: auto;
+	resize: none;
+	width: 90%;
+	top: 25;
+	left: 0;
+	right: 0;
+	position: absolute;
+}
+.ol-attribution button {
+	display: none !important;
+}
+.ol-zoom {
+	display: none !important;
+}
+.new-post {
+	background-color: rgba(150,150,150,0.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: none;
+}
+.filters {
+	float: right;
+}
+.nav-bar {	
+	position: absolute;
+}
+.close {
+	position: absolute;
+	right: 10;
+	top: 60;
+	opacity: 0.8;
+}
+.imgCanvas {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+}
+.openedImg {
+	position: absolute;
+	margin: auto;
+	max-height: 80%;
+	max-width: 80%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+@media (min-width: 767px) {
+	.user-post {
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		width: 30%;
+		min-width: 500px;
+		height: 300px;
+		margin: auto;
+		border-radius: 20px;
+	}
+	.text-post {
+		bottom: 70;
+	}
+}
+@media (max-width: 768px){
+	.user-post {
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+	}
+	.text-post {
+		bottom: 120;
+	}
+}

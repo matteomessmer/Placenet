@@ -1,0 +1,493 @@
+body {
+	background-color: #F0F8FF;		/*aliceblue*/
+	margin: 0px;
+	padding: 0px;
+}
+button {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+header {
+	/*border: dashed;*/
+	background-color: rgba(161, 127, 255, 0.9);
+	display: -webkit-box;
+	min-width: 300px;
+}
+canvas { position:fixed; top:0; left:0; z-index:1; }
+#content { position:relative; z-index:2; }
+.panel-title {
+	margin-left: 16px;
+	font-size: 2em !important;
+	font-weight: bold;
+}
+.mainpage-logo {
+	width:300px;
+	height: 120px;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+}
+.container {
+	margin-top: 60px;
+	padding: 10px;
+}
+.main-line {
+	min-height:250px;
+	height:auto !important;        /* for IE as it does not support min-height */
+	margin-bottom: 60px;
+}
+.jumbotron {
+	background: rgba(28, 134, 238, 0.9);		/*dodgerblue 2*/
+	min-height: 640px;
+	color: rgb(255, 255, 255);
+}
+.panel {
+	background: rgba(24, 116, 205, 0.7);		/*dodgerblue 3*/
+	border: 0px;
+	padding: 16px;
+}
+footer {
+	min-height: 25px;
+}
+.innerNewPost {
+	padding: 10px;
+}
+.new-post {
+	max-width: 480px;
+	margin: auto;
+	background-color: rgb(28, 134, 238);
+	border-radius: 30px;
+	padding: 25px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.user-post button {
+	height: 33px;
+}
+.buttons-right-post {
+	float: right;
+	margin-top: -44px;
+}
+.buttons-left-post {
+	margin: 10px;
+}
+.imgName {
+	margin: 10px;
+	font-size: 1.5em;
+	width: 190px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.text-post {
+	margin: auto;
+	resize: none;
+	width: 100%;
+}
+.btn-66 {
+	width: 68%;
+}
+.btn-2 {
+	width: 50%;
+}
+.btn-3 {
+	width: 32%;
+}
+.btn-4 {
+	width: 24%;
+}
+.btn-group {
+	width: 100%;
+}
+.icon {
+	height: 60px;
+	width: 60px;
+}
+.icon-20 {
+	height:20px;
+	width:20px;
+}
+.icon-100 {
+	height: 100px;
+	width:100px;
+}
+.input-group {
+	width:100% !important;
+}
+.input-group-btn {
+	vertical-align: initial;
+	width: auto;
+}
+.comment-input {
+	width:auto !important;
+}
+.panel-body input {
+	margin-bottom: 15px;
+}
+.cover-img {
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+}
+.profile {
+	width: 100%;
+}
+.profileContainer {
+	display: block;
+	margin: 0 auto;
+	margin-top: -75px;
+	width: 160px;
+	height: 160px;
+	background-color: #000;
+}
+.profile-img {
+	border-color: rgba(0,0,0,1);
+	width: 160px;
+	height: 160px;
+}
+.round-img {
+	border:0.1em solid;
+	border-radius: 100%;
+}
+.username {
+	text-transform: capitalize;
+}
+.name {
+	display: block;
+	text-align: center;
+}
+.menu {
+	margin: 10px;
+	margin-top: 20px;
+	text-align: center;
+}
+.menu button {
+	height:	133px;
+	width: 200px;
+}
+.menu img {
+	height:	100%;
+}
+.chat-bar {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(150,150,150);
+	/*position: fixed;*/
+	width: 100%;
+}
+.chat-messages {
+}
+.chat-box {
+	margin: 0;
+	padding: 20px;
+	background-color: rgb(150,150,150);
+	width: 100%;
+	bottom: 0px;
+	position: fixed;
+	display: flex;
+}
+.chat-box textarea button {
+	margin: 5px;
+}
+.chat-box textarea {
+	width: 100%;
+    resize: none;
+}
+
+.friend-list {
+ /* transition: all linear 0.5s;
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;*/
+}
+.friendActions button {
+	margin: 3px;
+}
+.research input {
+	margin-right: 5px;
+	display: inline;
+    width: auto;
+}
+.chat-bubble {
+	
+}
+
+.posts {
+	max-width: 500px;
+	margin: auto;
+    padding: 10px;
+}
+.post-user {	
+	cursor: pointer;
+	display: -webkit-box;
+}
+.post-user img {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	margin-left: 0px;
+}
+.post {
+	background-color: rgb(28, 134, 238);
+	color: #fff;
+	border-radius: 30px;
+	width:auto;
+    padding: 20px;
+    padding-top: 20px;
+	margin-bottom: 30px;
+}
+.post-img {
+	width: 100%;
+	padding: 10px;
+}
+.post-buttons button {
+	margin: 1px;
+}
+.comments {
+	height: 500px;
+}
+.comments-closed {
+	overflow: hidden;
+	height: 0px;
+}
+.comments-opened {
+    margin-top: 10px;
+	height:auto;
+}
+.write-comment {
+	width: 100%;
+    display: none;
+}
+.write-comment input {
+	/*display: inline;*/
+}
+.write-comment button {
+	/*margin-right: 5px;
+	float: right;*/
+}
+.fileInput {
+	height: 0px;
+	overflow: hidden;
+}
+.comment-user {
+	display: -webkit-box;
+}
+.comment-user img {
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+	margin-left: 0px;
+}
+
+.users-list {
+	
+}
+.user {
+	display: -webkit-box;
+	margin: 10px;
+}
+.user button {
+	margin-left: 10px;
+}
+.user-inline {
+	display: flex;
+}
+.user-inline img {
+	margin-right: 15px;
+}
+.user-inline h3 {
+	align-self: center;
+	margin: 0;
+}
+.user-inline h4 {
+	margin: auto;
+    margin-right: 20px;
+}
+
+.badged-btn {
+	max-height: 34px;
+}
+.badge {
+	background-color: rgb(255,0,0);
+}
+
+.research {
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	margin-top: 3px;
+}
+
+.findCanvas {
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.canvasClosed {
+	height: 0px !important;
+}
+.canvasOpened {
+	height: 100px;
+}
+.findPlace {
+	display: none;
+	margin: auto;
+	margin-top: 20px;
+}
+.findPlace form {
+	display: flex;
+	margin-bottom: 20px;
+}
+.findPlace input {
+	margin-top: 10px;
+	width: 80%;
+}
+.findPlace button {
+	margin-left: 26px;
+	height: 33px;
+	margin-top: 8px;
+}
+.place {
+	width: 80%;
+	margin: auto;
+	height: 50px;
+	padding: 15px;
+	cursor: pointer;
+}
+.place:hover{
+	background-color: rgb(63, 231, 255);
+	color: #000;
+}
+.placeA {
+	background: rgb(0, 105, 154);
+	color: #fff;
+}
+.placeB {
+	background: rgb(0, 32, 154);
+	color: #fff;
+}
+
+.settingsFindCanvas {
+	height: auto !important;
+}
+.settingsAddress {
+	display: flex;
+	margin-bottom: 20px;
+}
+.settingsAddress input {
+	max-width: 300px;
+	margin-right: 20px;
+}
+.address {
+	margin-left: 20px;
+}
+.dropdown-menu>li>a {
+	cursor: pointer !important;
+}
+
+.information {
+	text-align: center;
+	color: white;
+	background: rgb(100, 150, 200);
+	margin: auto;
+	margin-top: 20px;
+	padding: 10px;
+	max-width: 480px;
+	border-radius: 30px;
+}
+.information h4 {
+	text-transform: uppercase;
+}
+@media (max-width: 767px) {
+	a {
+		color: #000000;
+	}
+	.mainpage-logo {
+		background: url("../../assets/images/placenet logo full alt b.png");
+	}
+	.pull-right {
+		float: left !important;
+		width: 100%;
+	}
+	body {
+		margin: 0px;
+		padding: 0px;
+		height: 100%;
+	}
+	.container {
+		padding: 0px;
+		height: 100%;
+	}
+	.jumbotron {
+		margin: 0px !important;
+		border-radius: 0px !important;
+		background-color: rgba(0,0,0,0);
+		color: rgb(0, 0, 0);
+	}
+	h1 {
+		margin-left: 16px;
+	}
+	.register-button {
+		width:65%;
+		margin-left: 10px;
+		margin-right: 0px !important;
+	}
+	.resultsTitle {
+		padding: 30px;
+		padding-left: 5px;
+	}
+	.big {
+		display:none;
+	}
+	.small {
+		display: inline;
+	}
+	.container {
+		margin-top: 20px;
+	}
+	.container .research {
+		display: inline;
+		margin-left: 36px;
+	}
+	.researchBar {
+		width:70%;
+	}
+	.researchButton {
+		width: 26%;
+	}
+	.menu button {
+		margin: 10px;
+	}
+}
+@media (min-width: 768px){
+	a {
+		text-transform: uppercase;
+		color: #FFFFE0;		/*ivory*/
+	}
+	.mainpage-logo {
+		background: url("../../assets/images/placenet logo full alt.png");
+	}
+	a:hover { 
+		background-color: white;
+		text-decoration:none;
+	}
+	.resultsTitle {
+		padding-left: 20px;
+	}
+	.container .research {
+		margin: 20px;
+	}
+	.big {
+		display:inline;
+	}
+	.small {
+		display: none;
+	}
+	.menu button {
+		margin: 20px;
+	}
+}

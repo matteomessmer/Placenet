@@ -1,0 +1,35 @@
+.nav-bar {
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgb(100, 150, 200);
+	padding: 7px;
+	height: 50px;
+}
+.nav-buttons {
+	display: -webkit-inline-box;
+}
+.nav-buttons div {
+	margin-left:5px;
+}
+.user-post button {
+	height: 33px;
+}
+.buttons-right-post {
+	margin: 10px;
+}
+.buttons-left-post {
+	margin: 10px;
+}
+.imgName {
+	margin: 10px;
+	font-size: 1.5em;
+	width: 190px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.text-post {
+	margin: auto;
+	resize: none;
+	width: 90%;
+}
